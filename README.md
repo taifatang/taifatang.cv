@@ -6,10 +6,5 @@ Curriculum Vitae written in [Typst](https://typst.app). For a full career timeli
 
 Compile to PDF:
 ```sh
-typst compile cv.typ cv.pdf
-```
-
-Compile to HTML:
-```sh
-typst compile cv.typ cv.html
+typst compile cv.typ
 ```

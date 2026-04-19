@@ -1,0 +1,49 @@
+name: Compile and publish CV
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  compile-and-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout CV repo
+        uses: actions/checkout@v4
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Compile CV
+        run: typst compile cv.typ TaiFaTang.pdf
+
+      - name: Checkout taifatang.github.io
+        uses: actions/checkout@v4
+        with:
+          repository: taifatang/taifatang.github.io
+          token: ${{ secrets.GH_PAT }}
+          path: taifatang.github.io
+
+      - name: Copy PDF to target repo
+        run: cp TaiFaTang.pdf taifatang.github.io/assets/projects/TaiFaTang.pdf
+
+      - name: Create PR in taifatang.github.io
+        id: create-pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GH_PAT }}
+          path: taifatang.github.io
+          branch: update-cv-${{ github.sha }}
+          title: "Update CV"
+          body: |
+            Automated CV update from [taifatang/taifatang.cv@${{ github.sha }}](https://github.com/taifatang/taifatang.cv/commit/${{ github.sha }}).
+          commit-message: "update TaiFaTang.pdf"
+          delete-branch: true
+
+      - name: Merge PR
+        if: steps.create-pr.outputs.pull-request-number
+        run: gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --squash --auto --repo taifatang/taifatang.github.io
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}

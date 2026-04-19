@@ -36,14 +36,13 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           path: taifatang.github.io
           branch: update-cv-${{ github.sha }}
-          title: "Update CV"
+          title: "chore: CV Update from taifatang/taifatang.cv@${{ github.sha }}"
           body: |
             Automated CV update from [taifatang/taifatang.cv@${{ github.sha }}](https://github.com/taifatang/taifatang.cv/commit/${{ github.sha }}).
           commit-message: "update TaiFaTang.pdf"
-          delete-branch: true
 
       - name: Merge PR
         if: steps.create-pr.outputs.pull-request-number
-        run: gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --squash --auto --repo taifatang/taifatang.github.io
+        run: gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --squash --auto --delete-branch --repo taifatang/taifatang.github.io
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}

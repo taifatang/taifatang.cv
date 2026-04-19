@@ -113,8 +113,8 @@ Senior Software Engineer at TrueLayer, with over a decade of experience building
 - *1st Place* — SpecialEffect Charity Hackathon 2017, team of 5 formed within ASOS
 - Microsoft Service Fabric Hack Fest 2017, London
 - Microsoft Certified Professional (MCP)
-- MS: Programming in HTML5 with JavaScript and CSS3
-- MS: Programming in C\#
+- MS: Programming in HTML5 with JavaScript and CSS3 (70-480)
+- MS: Programming in C\# (70-483)
 - Security Compass: Secure Software Design (CSP103)
 - Security Compass: OWASP Top 10 (SEC101)
 - Codurance Software Craftsmanship 12-week programme

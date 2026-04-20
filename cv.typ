@@ -12,7 +12,7 @@
   line(length: 100%, stroke: 0.5pt)
   v(10pt)
 }
-
+ 
 #align(center)[
   #set par(spacing: 0pt)
   #text(size: 22pt, weight: "bold")[Tai Fa Tang]

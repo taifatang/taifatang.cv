@@ -1,0 +1,24 @@
+name: Check CV compiles
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Compile CV
+        run: typst compile cv.typ TaiFaTang.pdf
+
+      # typst doesn't return an error when compilation fails, so we need to check for the existence of the output file
+      - name: Verify PDF
+        run: file TaiFaTang.pdf | grep -q "PDF" || (echo "Output is not a valid PDF" && exit 1)

@@ -51,7 +51,7 @@ Senior Software Engineer at TrueLayer, with over a decade of experience building
   #v(3pt)
   - Redesigned and modernised the load testing platform, transforming it into a self-service tool that enabled all teams to run and extend tests independently. The project became a company-wide success, earning recognition from leadership and peers, including mentions in all-hands by the CEO and CTO.
   - Led the AmazonMQ multi-cluster migration across all .NET services, collaborating with the Rust counterpart, implementing checkpoints for phase readiness, and coordinating with stakeholders to reduce deployment risks, delivering a more reliable and scalable messaging infrastructure.
-  - Delivered Open Banking-related features and leveraged AI tools to streamline repetitive tasks, improving development efficiency. Executed several critical data migrations across Kubernetes-managed infrastructure, ensuring seamless transitions and system reliability across platforms.
+  - Delivered Open Banking features, leveraged AI tools to streamline repetitive tasks, and executed critical data migrations across Kubernetes-managed infrastructure.
 
 #v(6pt)
 
@@ -61,7 +61,7 @@ Senior Software Engineer at TrueLayer, with over a decade of experience building
   )
   #v(3pt)
   - Collaborated with the solution architect to redesign Trainline's fraud platform, integrating additional data points via AWS SQS into a third-party fraud solution to identify fraudulent transactions through a multi-linked object graph.
-  - Orchestrated large-scale sensitive data tokenisation migration across more than 15 product channels. Contributed to the development of Card 3DSv2 and served as an integration specialist on a cross-functional task force supporting multiple apps and platforms.
+  - Orchestrated large-scale sensitive data tokenisation migration across more than 15 product channels. Contributed to the development of Card 3DSv2 and served as an integration specialist on a cross-functional task force spanning web, iOS, and Android.
   - Implemented payment features in C\# across Card, Apple Pay, Google Pay, and PayPal, spanning multiple payment service providers. Maintained PCI-compliant standards throughout with a strong focus on sensitive data masking.
   - Contributed to modernising Trainline's payment services by migrating them to a new infrastructure stack using Terraform and Spacelift, establishing a shorter path to production.
 
@@ -73,8 +73,8 @@ Senior Software Engineer at TrueLayer, with over a decade of experience building
   )
   #v(3pt)
   - Built an AI chatbot in C\# on Azure Service Fabric using natural language processing, integrated with ASOS authentication and APIs to deliver personalised clothing recommendations. Covered the full cycle from prototyping and MVP through to user testing within an internal start-up environment.
-  - Developed secure OAuth and OpenID Connect authentication systems on Azure, improving sign-on experiences, JWT token management, and user profile management across applications.
-  - Redesigned the user experience for an internal tool, making manual testing more efficient and intuitive for the team.
+  - Implemented OAuth and OpenID Connect authentication features on Azure, improving sign-on experiences, JWT token management, and user profile management across applications.
+  - Redesigned the user experience for an internal tool, making manual testing more efficient and intuitive.
 
 #v(6pt)
 
@@ -83,7 +83,7 @@ Senior Software Engineer at TrueLayer, with over a decade of experience building
     [Nov 2015 – Sep 2016]
   )
   #v(3pt)
-  - Developed an influencer registration portal and internal tools full-stack using C\#, JavaScript, and AngularJS, working closely with designers across the entire product lifecycle, from data ingestion and system integration through to interface improvement.
+  - Developed an influencer registration portal and internal tools full-stack using C\#, JavaScript, and AngularJS, working closely with designers across the entire product lifecycle, from system integration through to interface improvement.
 
 = Education
 

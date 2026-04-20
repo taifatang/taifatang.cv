@@ -42,7 +42,7 @@ jobs:
           title: "chore: AutomatedCV Update from taifatang.cv@${{ env.SHORT_SHA }}"
           body: |
             Automated CV update from taifatang.cv@[${{ env.SHORT_SHA }}](https://github.com/taifatang/taifatang.cv/commit/${{ github.sha }}).
-          commit-message: "update TaiFaTang.pdf"
+          commit-message: "Automated CV update from taifatang.cv@${{ env.SHORT_SHA }}"
 
       - name: Merge PR
         if: steps.create-pr.outputs.pull-request-number

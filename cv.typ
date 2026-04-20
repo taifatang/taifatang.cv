@@ -7,10 +7,3 @@
 #show heading: set block(above: 0pt, below: 0pt)
 #show heading.where(level: 1): it => {
   v(8pt)
-  text(size: 12pt, weight: "bold", upper(it.body))
-  v(5pt)
-  line(length: 100%, stroke: 0.5pt)
-  v(10pt)
-}
- 
-#align

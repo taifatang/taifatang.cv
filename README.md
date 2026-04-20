@@ -8,3 +8,7 @@ Compile to PDF:
 ```sh
 typst compile cv.typ
 ```
+
+## Deployment
+
+Any changes to the main branch will trigger a deployment to [taifatang.github.io](https://taifatang.github.io) via GitHub Action

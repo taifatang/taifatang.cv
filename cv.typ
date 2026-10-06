@@ -49,6 +49,8 @@ Senior Software Engineer at TrueLayer, with over a decade of experience building
     [Apr 2022 – Present]
   )
   #v(3pt)
+  - Lead a team of 4 running 3 parallel workstreams (new checkout experience, payment auth flow redesign, decoupled routing layer for new payment methods), liaising with all engineering teams and setting MVP, Pilot and Post-Pilot milestones with the product owner. MVP build now in progress.
+  - Run sprint planning, retros and agile ceremonies, introducing a Scrumban approach that combines Scrum ticket sizing with flexible Kanban-style prioritisation to adapt quickly to changing priorities.
   - Redesigned and modernised the load testing platform, transforming it into a self-service tool that enabled all teams to run and extend tests independently. The project became a company-wide success, earning recognition from leadership and peers, including mentions in all-hands by the CEO and CTO.
   - Led the AmazonMQ multi-cluster migration across all .NET services, collaborating with the Rust counterpart, implementing checkpoints for phase readiness, and coordinating with stakeholders to reduce deployment risks, delivering a more reliable and scalable messaging infrastructure.
   - Delivered Open Banking features, leveraged AI tools to streamline repetitive tasks, and executed critical data migrations across Kubernetes-managed infrastructure.
